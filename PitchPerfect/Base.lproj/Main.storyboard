@@ -26,14 +26,32 @@
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWo-8y-5a6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-wD-6Lc">
+                                <rect key="frame" x="136" y="420" width="103" height="30"/>
+                                <state key="normal" title="Stop recording"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-gt-YPT">
+                                <rect key="frame" x="136.5" y="379" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="centerX" secondItem="z8L-gt-YPT" secondAttribute="centerX" id="8Dh-YH-mew"/>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="centerX" secondItem="9H0-7b-HUI" secondAttribute="centerX" id="Of8-19-q0p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dXP-wD-6Lc" secondAttribute="bottom" constant="217" id="fo2-F6-L8V"/>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="ifC-3E-sUM"/>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="top" secondItem="z8L-gt-YPT" secondAttribute="bottom" constant="20" id="owY-Xi-fDq"/>
                             <constraint firstItem="9H0-7b-HUI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zZT-Lf-OB3"/>
                             <constraint firstItem="9H0-7b-HUI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zgU-7C-n1a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="recordingLabel" destination="z8L-gt-YPT" id="MnK-sJ-5Lj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
