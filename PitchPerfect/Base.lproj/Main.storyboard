@@ -29,6 +29,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-wD-6Lc">
                                 <rect key="frame" x="136" y="420" width="103" height="30"/>
                                 <state key="normal" title="Stop recording"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txv-Pj-YhE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-gt-YPT">
                                 <rect key="frame" x="136.5" y="379" width="102" height="21"/>
@@ -50,7 +53,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="recordingButton" destination="9H0-7b-HUI" id="WIv-JG-Ahs"/>
                         <outlet property="recordingLabel" destination="z8L-gt-YPT" id="MnK-sJ-5Lj"/>
+                        <outlet property="stopRecordingButton" destination="dXP-wD-6Lc" id="XOG-nF-6x9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
