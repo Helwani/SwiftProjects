@@ -18,37 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H0-7b-HUI">
-                                <rect key="frame" x="163" y="328.5" width="49" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Record"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H0-7b-HUI">
+                                <rect key="frame" x="110" y="72" width="155" height="155"/>
+                                <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWo-8y-5a6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-wD-6Lc">
-                                <rect key="frame" x="136" y="420" width="103" height="30"/>
-                                <state key="normal" title="Stop recording"/>
-                                <connections>
-                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txv-Pj-YhE"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-gt-YPT">
-                                <rect key="frame" x="136.5" y="379" width="102" height="21"/>
+                                <rect key="frame" x="136.5" y="323" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-wD-6Lc">
+                                <rect key="frame" x="110" y="419" width="155" height="155"/>
+                                <state key="normal" image="Stop"/>
+                                <connections>
+                                    <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txv-Pj-YhE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="centerX" secondItem="z8L-gt-YPT" secondAttribute="centerX" id="8Dh-YH-mew"/>
-                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="centerX" secondItem="9H0-7b-HUI" secondAttribute="centerX" id="Of8-19-q0p"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dXP-wD-6Lc" secondAttribute="bottom" constant="217" id="fo2-F6-L8V"/>
-                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="136" id="ifC-3E-sUM"/>
-                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="top" secondItem="z8L-gt-YPT" secondAttribute="bottom" constant="20" id="owY-Xi-fDq"/>
-                            <constraint firstItem="9H0-7b-HUI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="zZT-Lf-OB3"/>
-                            <constraint firstItem="9H0-7b-HUI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zgU-7C-n1a"/>
+                            <constraint firstItem="9H0-7b-HUI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1FH-4j-SHL"/>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="top" secondItem="9H0-7b-HUI" secondAttribute="bottom" constant="192" id="57g-A4-tbx"/>
+                            <constraint firstItem="9H0-7b-HUI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-194" id="812-Rq-bL1"/>
+                            <constraint firstItem="z8L-gt-YPT" firstAttribute="top" secondItem="9H0-7b-HUI" secondAttribute="bottom" constant="96" id="NQi-qt-sZf"/>
+                            <constraint firstItem="dXP-wD-6Lc" firstAttribute="centerX" secondItem="9H0-7b-HUI" secondAttribute="centerX" id="R90-Dz-pMu"/>
+                            <constraint firstItem="z8L-gt-YPT" firstAttribute="centerX" secondItem="9H0-7b-HUI" secondAttribute="centerX" id="aiq-kW-cOq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -63,4 +61,8 @@
             <point key="canvasLocation" x="133.59999999999999" y="99.400299850074973"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RecordButton" width="155" height="155"/>
+        <image name="Stop" width="155" height="155"/>
+    </resources>
 </document>
