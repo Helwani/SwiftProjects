@@ -19,20 +19,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9H0-7b-HUI">
-                                <rect key="frame" x="110" y="94" width="155" height="155"/>
+                                <rect key="frame" x="110" y="72" width="155" height="155"/>
                                 <state key="normal" image="RecordButton"/>
                                 <connections>
                                     <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iWo-8y-5a6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z8L-gt-YPT">
-                                <rect key="frame" x="136.5" y="345" width="102" height="21"/>
+                                <rect key="frame" x="136.5" y="323" width="102" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXP-wD-6Lc">
-                                <rect key="frame" x="155.5" y="441" width="64" height="64"/>
+                                <rect key="frame" x="155.5" y="419" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="wqO-Pt-ynM"/>
                                     <constraint firstAttribute="width" constant="64" id="zNc-XH-oAq"/>
@@ -40,7 +40,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Txv-Pj-YhE"/>
-                                    <segue destination="gE4-Ln-Dwe" kind="show" id="faj-IA-t9v"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,6 +59,7 @@
                         <outlet property="recordingButton" destination="9H0-7b-HUI" id="WIv-JG-Ahs"/>
                         <outlet property="recordingLabel" destination="z8L-gt-YPT" id="MnK-sJ-5Lj"/>
                         <outlet property="stopRecordingButton" destination="dXP-wD-6Lc" id="XOG-nF-6x9"/>
+                        <segue destination="gE4-Ln-Dwe" kind="show" id="r9W-YF-7m6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -91,9 +91,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4sg-bI-Qvr"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a5-5o-xQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
