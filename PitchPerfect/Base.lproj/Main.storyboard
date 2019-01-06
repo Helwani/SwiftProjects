@@ -59,17 +59,17 @@
                         <outlet property="recordingButton" destination="9H0-7b-HUI" id="WIv-JG-Ahs"/>
                         <outlet property="recordingLabel" destination="z8L-gt-YPT" id="MnK-sJ-5Lj"/>
                         <outlet property="stopRecordingButton" destination="dXP-wD-6Lc" id="XOG-nF-6x9"/>
-                        <segue destination="gE4-Ln-Dwe" kind="show" id="r9W-YF-7m6"/>
+                        <segue destination="gE4-Ln-Dwe" kind="show" identifier="stopRecording" id="r9W-YF-7m6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1072.8" y="99.400299850074973"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="H3F-gJ-k3z">
             <objects>
-                <viewController id="gE4-Ln-Dwe" sceneMemberID="viewController">
+                <viewController id="gE4-Ln-Dwe" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fey-rl-R49">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="mainSegue" id="HAN-4G-sGz"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7a5-5o-xQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
