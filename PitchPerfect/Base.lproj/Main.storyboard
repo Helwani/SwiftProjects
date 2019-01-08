@@ -73,7 +73,23 @@
                     <view key="view" contentMode="scaleToFill" id="fey-rl-R49">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xLk-wr-1FH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nnk-nq-nGq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aGw-Kh-aDL" firstAttribute="trailing" secondItem="xLk-wr-1FH" secondAttribute="trailing" id="8sD-e0-SdT"/>
+                            <constraint firstItem="aGw-Kh-aDL" firstAttribute="bottom" secondItem="xLk-wr-1FH" secondAttribute="bottom" id="Gy4-MT-pMo"/>
+                            <constraint firstItem="xLk-wr-1FH" firstAttribute="top" secondItem="aGw-Kh-aDL" secondAttribute="top" id="blV-Vu-M0U"/>
+                            <constraint firstItem="xLk-wr-1FH" firstAttribute="leading" secondItem="aGw-Kh-aDL" secondAttribute="leading" id="daR-qL-63r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aGw-Kh-aDL"/>
                     </view>
                 </viewController>
